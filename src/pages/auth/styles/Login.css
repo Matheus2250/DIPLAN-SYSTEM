@@ -1,0 +1,24 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fa;
+}
+
+.login-paper {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-title {
+  margin-bottom: 24px !important;
+  font-weight: 600 !important;
+}
+
+.login-button {
+  margin-top: 24px !important;
+  padding: 12px !important;
+}

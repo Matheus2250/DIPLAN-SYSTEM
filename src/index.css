@@ -1,0 +1,31 @@
+/* src/index.css */
+html, 
+body, 
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reset para elementos do Material UI que podem causar problemas de layout */
+.MuiContainer-root {
+  padding-bottom: 40px !important;
+}
+
+.MuiBox-root,
+.MuiGrid-root,
+.MuiPaper-root {
+  max-height: none !important;
+  overflow: visible !important;
+}

@@ -1,0 +1,81 @@
+.diplan-dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-container {
+  flex-grow: 1;
+  padding: 24px;
+  max-width: 1200px;
+}
+
+.upload-section {
+  margin-bottom: 32px;
+}
+
+.upload-paper {
+  padding: 24px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 32px;
+  background-color: #fafafa;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.file-label:hover {
+  border-color: #1976d2;
+  background-color: #f0f7ff;
+}
+
+.upload-icon {
+  font-size: 64px !important;
+  color: #1976d2;
+  margin-bottom: 16px;
+}
+
+.upload-button {
+  margin-top: 16px !important;
+  padding: 8px 24px !important;
+}
+
+.table-section {
+  margin-top: 32px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.aprovada {
+  background-color: #e6f7ed;
+  color: #1e9d5a;
+}
+
+.status-badge.em-análise {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-badge.pendente {
+  background-color: #fff8e6;
+  color: #ed6c02;
+}
