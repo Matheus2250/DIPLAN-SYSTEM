@@ -5,10 +5,11 @@ import { useNavigate } from 'react-router-dom';
 function AreaSelection() {
   const navigate = useNavigate();
 
-  // Estilo comum para ambos os cards
+  // Estilo comum para ambos os cards - MESMO TAMANHO GARANTIDO
   const cardStyle = {
     width: '100%',
     maxWidth: '400px',
+    height: '300px', // Altura fixa para garantir mesmo tamanho (reduzida pela remoção da seção)
     border: '1px solid #e0e0e0',
     borderRadius: '8px',
     overflow: 'hidden',
@@ -16,7 +17,7 @@ function AreaSelection() {
     display: 'inline-block',
     margin: '0 16px 32px',
     backgroundColor: '#fff',
-    verticalAlign: 'top',  // Crucial para alinhamento igual
+    verticalAlign: 'top',
   };
 
   // Estilo para os cabeçalhos
@@ -24,18 +25,11 @@ function AreaSelection() {
     padding: '40px 20px',
     textAlign: 'center',
     color: 'white',
-    height: '160px',
+    height: '200px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    boxSizing: 'border-box',
-  };
-
-  // Estilo para a seção de conteúdo
-  const contentStyle = {
-    padding: '24px',
-    height: '180px',  // Altura fixa igual para o conteúdo
     boxSizing: 'border-box',
   };
 
@@ -45,6 +39,7 @@ function AreaSelection() {
     textAlign: 'center',
     borderTop: '1px solid #eee',
     boxSizing: 'border-box',
+    height: '100px',  // Altura fixa para o rodapé
   };
 
   // Estilo para os botões
@@ -57,6 +52,9 @@ function AreaSelection() {
     color: 'white',
     textTransform: 'uppercase',
     fontSize: '14px',
+    height: '40px',
+    width: '100%',
+    maxWidth: '250px',
   };
 
   return (
@@ -89,7 +87,7 @@ function AreaSelection() {
           display: 'flex', 
           justifyContent: 'center', 
           flexWrap: 'wrap',
-          margin: '0 -16px',  // Compensar margem dos cards
+          margin: '0 -16px',
         }}>
           {/* DIPLAN CARD */}
           <div style={cardStyle}>
@@ -102,33 +100,9 @@ function AreaSelection() {
               <Typography variant="h4" style={{ fontWeight: 'bold', margin: 0 }}>
                 DIPLAN
               </Typography>
-              <Typography variant="subtitle1" style={{ margin: 0 }}>
-                Diretoria de Planejamento
+              <Typography variant="subtitle1" style={{ margin: 0, padding: '0 20px' }}>
+                Divisão de Planejamento e Dados das Contratações Administrativas
               </Typography>
-            </div>
-            
-            {/* Conteúdo do card */}
-            <div style={contentStyle}>
-              <Typography variant="h6" style={{ fontWeight: 'bold', marginBottom: '16px' }}>
-                Funções Principais:
-              </Typography>
-              <ul style={{ paddingLeft: '20px', margin: 0 }}>
-                <li style={{ marginBottom: '8px' }}>
-                  <Typography variant="body1">
-                    Gerenciamento do Plano de Contratação Anual (PCA)
-                  </Typography>
-                </li>
-                <li style={{ marginBottom: '8px' }}>
-                  <Typography variant="body1">
-                    Acompanhamento de contratações e processos
-                  </Typography>
-                </li>
-                <li style={{ marginBottom: '8px' }}>
-                  <Typography variant="body1">
-                    Upload e processamento da planilha PCA
-                  </Typography>
-                </li>
-              </ul>
             </div>
             
             {/* Rodapé do card */}
@@ -153,33 +127,9 @@ function AreaSelection() {
               <Typography variant="h4" style={{ fontWeight: 'bold', margin: 0 }}>
                 DIPLI
               </Typography>
-              <Typography variant="subtitle1" style={{ margin: 0 }}>
-                Diretoria de Planejamento Interno
+              <Typography variant="subtitle1" style={{ margin: 0, padding: '0 20px' }}>
+                Divisão de Procedimentos Licitatórios
               </Typography>
-            </div>
-            
-            {/* Conteúdo do card */}
-            <div style={contentStyle}>
-              <Typography variant="h6" style={{ fontWeight: 'bold', marginBottom: '16px' }}>
-                Funções Principais:
-              </Typography>
-              <ul style={{ paddingLeft: '20px', margin: 0 }}>
-                <li style={{ marginBottom: '8px' }}>
-                  <Typography variant="body1">
-                    Controle e acompanhamento de licitações
-                  </Typography>
-                </li>
-                <li style={{ marginBottom: '8px' }}>
-                  <Typography variant="body1">
-                    Gestão de documentos e processos internos
-                  </Typography>
-                </li>
-                <li style={{ marginBottom: '8px' }}>
-                  <Typography variant="body1">
-                    Fluxo de aprovações e revisões
-                  </Typography>
-                </li>
-              </ul>
             </div>
             
             {/* Rodapé do card */}
